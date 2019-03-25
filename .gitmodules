@@ -1,0 +1,3 @@
+[submodule "maskrcnn-benchmark"]
+	path = maskrcnn-benchmark
+	url = https://github.com/joe-siyuan-qiao/maskrcnn-benchmark.git
