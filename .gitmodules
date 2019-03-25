@@ -1,3 +1,6 @@
 [submodule "maskrcnn-benchmark"]
 	path = maskrcnn-benchmark
 	url = https://github.com/joe-siyuan-qiao/maskrcnn-benchmark.git
+[submodule "pytorch-classification"]
+	path = pytorch-classification
+	url = https://github.com/joe-siyuan-qiao/pytorch-classification.git
