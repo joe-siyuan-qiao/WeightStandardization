@@ -4,3 +4,6 @@
 [submodule "pytorch-classification"]
 	path = pytorch-classification
 	url = https://github.com/joe-siyuan-qiao/pytorch-classification.git
+[submodule "dgcnn"]
+	path = dgcnn
+	url = git@github.com:csrhddlam/dgcnn.git
