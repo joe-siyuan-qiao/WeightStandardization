@@ -7,3 +7,6 @@
 [submodule "dgcnn"]
 	path = dgcnn
 	url = git@github.com:csrhddlam/dgcnn.git
+[submodule "DeepLabv3.pytorch"]
+	path = DeepLabv3.pytorch
+	url = https://github.com/chenxi116/DeepLabv3.pytorch.git
