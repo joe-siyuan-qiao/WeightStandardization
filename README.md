@@ -1,6 +1,6 @@
 # Weight Standardization
 
-[Weight Standardization](https://github.com/joe-siyuan-qiao/WeightStandardization) (WS) is a normalization method to accelerate **micro-batch training**.
+[Weight Standardization](https://arxiv.org/abs/1903.10520) (WS) is a normalization method to accelerate **micro-batch training**.
 Micro-batch training is hard because small batch sizes are not enough for
 training networks with Batch Normalization (BN), while
 other normalization methods that do not rely on batch
@@ -20,14 +20,14 @@ You will be surprised by how well it performs.
 </p>
 
 WS achieves these superior results by standardizing the weights in the convolutional layers, which we show is able to smooth the loss landscape by reducing the Lipschitz constants of the loss and the gradients.
-Please see our [arXiv](https://github.com/joe-siyuan-qiao/WeightStandardization) report for the details.
+Please see our [arXiv](https://arxiv.org/abs/1903.10520) report for the details.
 If you find this project helpful, please consider citing our paper.
 
 ```
 @article{weightstandardization,
   author    = {Siyuan Qiao and Huiyu Wang and Chenxi Liu and Wei Shen and Alan Yuille},
   title     = {Weight Standardization},
-  journal   = {arXiv preprint arXiv:??????????},
+  journal   = {arXiv preprint arXiv:1903.10520},
   year      = {2019},
 }
 ```
