@@ -56,12 +56,8 @@ class Conv2d(nn.Conv2d):
                  padding, dilation, groups, bias)
 
     def forward(self, x):
-        weight = self.weight
-        weight_mean = weight.mean(dim=1, keepdim=True).mean(dim=2,
-                                  keepdim=True).mean(dim=3, keepdim=True)
-        weight = weight - weight_mean
-        std = weight.view(weight.size(0), -1).std(dim=1).view(-1, 1, 1, 1) + 1e-5
-        weight = weight / std.expand_as(weight)
+        std, mean = torch.std_mean(self.weight, dim=(1, 2, 3), keepdim=True)
+        weight = (weight - mean) / (std + 1e-5)
         return F.conv2d(x, weight, self.bias, self.stride,
                         self.padding, self.dilation, self.groups)
 ```
